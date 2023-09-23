@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.btn {
+  @apply shadow-md rounded-md transition duration-300;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-pink-700  via-purple-500 to-purple-800 text-white px-5 py-2.5 text-xs focus:outline-none focus:ring-4 focus:ring-gray-200 mr-2;
+}
+
+.btn-secondary {
+  @apply bg-secondary border border-mirage text-white px-5 py-2.5 text-xs focus:outline-none focus:ring-4 focus:ring-gray-200 mr-2;
+}
+
+.custom-placeholder::placeholder {
+  @apply font-medium text-gray-500 text-xs;
+}

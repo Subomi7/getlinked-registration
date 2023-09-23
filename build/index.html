@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Fontshare -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=clash-display@400,700,600,300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- fontshare -->
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=montserrat@401,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/1f1a45f7a5.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/main.js"></script>
+  </head>
+  <body class="bg-secondary">
+    <header class="">
+      <nav
+        class="container flex justify-between items-center py-4 mt-4 sm:mt-12"
+      >
+        <div
+          class="hidden font-clash-display font-sans font-extrabold text-2xl text-white lg:block"
+        >
+          get<span class="text-mirage">linked</span>
+        </div>
+        <ul
+          class="hidden sm:flex flex-1 justify-end items-center gap-12 text-white text-sm font-bold"
+        >
+          <li class="cursor-pointer">Timeline</li>
+          <li class="cursor-pointer">Overview</li>
+          <li class="cursor-pointer">FAQs</li>
+          <li class="cursor-pointer">
+            <img src="/build/images/Contact.svg" />
+          </li>
+          <button type="button" class="btn btn-secondary w-40">Register</button>
+        </ul>
+        <div class="flex sm:hidden flex-1 justify-start">
+          <h3 class="text-mirage font-bold">Register</h3>
+        </div>
+      </nav>
+    </header>
+
+    <section
+      class="relative bg-gradient-to-tr from-tertiary via-secondary to-secondary"
+    >
+      <!-- elements -->
+      <div class="relative">
+        <div class="absolute top-52 right-10 lg:top-20 lg:left-60">
+          <img src="/build/images/star.svg" />
+        </div>
+        <div class="absolute bottom-10 right-1/3 lg:top-96 lg:right-1/2">
+          <img src="/build/images/star pu.svg" />
+        </div>
+        <div class="absolute top-10 right-36 lg:top-1/2 lg:right-96">
+          <img src="/build/images/star (1).svg" />
+        </div>
+        <div class="absolute top-16 lg:top-28 lg:left-1/3 left-1/2">
+          <img src="/build/images/star (1).svg" />
+        </div>
+      </div>
+
+      <div class="mt-0 lg:mt-0">
+        <div
+          class="container flex flex-col lg:flex-row items-center justify-between gap-x-28 py-16"
+        >
+          <!-- Image -->
+          <div class="flex flex-1 justify-center mb-10 lg:mb-0">
+            <img
+              class="w-5/6 h-5/6 sm:w-3/4 sm:h-3/4 md:w-full md:h-full"
+              src="/build/images/3d-graphic-designer-showing-thumbs-up-png 1.svg"
+              alt=""
+            />
+          </div>
+
+          <!-- inputs -->
+          <div
+            class="lg:bg-subby lg:shadow-lg rounded-md p-7 sm:ml-10 lg:px-7 flex flex-col"
+          >
+            <h2
+              class="hidden py-4 font-clash-display font-sans text-mirage text-xl font-extrabold text-left lg:text-left lg:block"
+            >
+              Register
+            </h2>
+            <div class="relative flex items-center justify-center">
+              <p
+                class="relative font-montserrat font-sans text-white text-lg my-4 text-center lg:text-left lg:w-full"
+              >
+                Be part of this movement!
+                <span class="text-mirage">.......................</span>
+              </p>
+              <div class="flex">
+                <img
+                  class="absolute right-32 top-7.5 md:top-1.5 md:right-32 lg:top-1.5 lg:right-32"
+                  src="/build/images/man.jpg"
+                />
+                <img
+                  class="absolute right-40 top-7.5 md:top-2 md:right-40 lg:top-2 lg:right-40"
+                  src="/build/images/woman.jpg"
+                />
+              </div>
+            </div>
+            <h2
+              class="py-4 font-clash-display font-sans text-white text-2xl font-medium text-center lg:text-left"
+            >
+              CREATE YOUR OWN ACCOUNT
+            </h2>
+
+            <div class="form" id="registration">
+              <div
+                class="flex items-center justify-center flex-col lg:flex-row py-2 gap-x-10"
+              >
+                <div class="py-2">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-white"
+                    >Team's Name</label
+                  >
+                  <input
+                    type="text"
+                    id="teamName"
+                    placeholder="Enter the name of your group"
+                    class="w-72 p-2 placeholder text-white border border-gray-300 rounded-md bg-subby sm:text-md focus:ring-mirage focus:border-mirage lg:w-48 custom-placeholder"
+                  />
+                </div>
+                <div class="py-2">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-white"
+                    >Phone</label
+                  >
+                  <input
+                    type="text"
+                    id="phoneNumber"
+                    placeholder="Enter your phone number"
+                    class="w-72 p-2 text-white border border-gray-300 rounded-md bg-subby sm:text-md focus:ring-mirage focus:border-mirage lg:w-48 custom-placeholder"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex items-center justify-between flex-col lg:flex-row py-2"
+              >
+                <div class="py-2">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-white"
+                    >Email</label
+                  >
+                  <input
+                    type="text"
+                    id="email"
+                    placeholder="Enter your email address"
+                    class="w-72 p-2 text-white border border-gray-300 rounded-md bg-subby sm:text-md focus:ring-mirage focus:border-mirage lg:w-48 custom-placeholder"
+                  />
+                </div>
+                <div class="py-2">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-white"
+                    >Project Topic</label
+                  >
+                  <input
+                    name="Firstname"
+                    type="text"
+                    id="topic"
+                    placeholder="What is your group project topic"
+                    class="w-72 p-2 text-white border border-gray-300 rounded-md bg-subby sm:text-md focus:ring-mirage focus:border-mirage lg:w-48 custom-placeholder"
+                  />
+                </div>
+              </div>
+              <div
+                class="flex items-center justify-evenly flex-row lg:flex-row py-2 lg:justify-between"
+              >
+                <div class="py-4">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-white"
+                    >Category</label
+                  >
+                  <select
+                    id="category"
+                    class="bg-subby border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-44 p-2 lg:w-48"
+                  >
+                    <option>Select your category</option>
+                    <option>1</option>
+                  </select>
+                </div>
+                <div class="py-4">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm font-medium text-white"
+                    >Group size</label
+                  >
+                  <select
+                    id="groupSize"
+                    class="bg-subby border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-20 p-2 lg:w-48"
+                  >
+                    <option>Select</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                  </select>
+                </div>
+              </div>
+              <p
+                class="font-montserrat font-sans italic text-mirage text-xs font-light my-4 text-center lg:text-left lg:w-full"
+              >
+                Please review your registration details before submitting
+              </p>
+              <div class="flex items-center justify-center text-center mb-4">
+                <input
+                  id="privacy"
+                  type="checkbox"
+                  value=""
+                  class="w-4 h-4 text-mirage bg-subby border-mirage rounded focus:ring-subby focus:ring-2"
+                />
+                <label
+                  for="privacy"
+                  class="ml-2 text-xs font-medium text-white flex flex-1"
+                  >I agreed with the event terms and conditions and privacy
+                  policy</label
+                >
+              </div>
+              <div class="flex items-center justify-center py-6">
+                <button
+                  type="submit"
+                  id="submitButton"
+                  class="btn btn-primary w-40 lg:w-96"
+                  onclick="registration()"
+                >
+                  Register now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
